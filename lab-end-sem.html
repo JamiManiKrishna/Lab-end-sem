@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyShop</title>
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #eee;
+}
+
+/* Flexbox */
+header {
+    background: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Animation */
+.hero {
+    background: blue;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    animation: fade 2s;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>MyShop</h2>
+    <nav>Home | Products | Contact</nav>
+</header>
+
+<div class="hero">
+    <h1>Welcome to MyShop</h1>
+    <p>Online Shopping Website</p>
+    <button>Shop Now</button>
+</div>
+
+<h2 align="center">Our Products</h2>
+
+<div class="products">
+    <div class="card">
+        <h3>Mobile</h3>
+        <p>₹15000</p>
+    </div>
+
+    <div class="card">
+        <h3>Laptop</h3>
+        <p>₹45000</p>
+    </div>
+
+    <div class="card">
+        <h3>Headphones</h3>
+        <p>₹2000</p>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright 2026 MyShop</p>
+</footer>
+
+</body>
+</html>
